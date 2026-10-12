@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Surprise ❤️</title>
+
+<style>
+body {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3, #ffc3a0);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: white;
+  padding: 30px 10px;
+}
+.card {
+  background: rgba(255,255,255,0.2);
+  border-radius: 25px;
+  padding: 25px 15px;
+  max-width: 400px;
+  margin: auto;
+}
+h1 { font-size: 32px; }
+button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  color: #ff4081;
+  font-size: 17px;
+  font-weight: bold;
+}
+#message { display: none; }
+.heart {
+  font-size: 45px;
+  animation: beat 1s infinite alternate;
+}
+@keyframes beat {
+  to { transform: scale(1.2); }
+}
+</style>
+</head>
+
+<body>
+<div class="card">
+  <div class="heart">❤️</div>
+  <h1>Happy Birthday! 🎂</h1>
+  <p>A little surprise just for you! ✨</p>
+
+  <button onclick="openWish()">Open Your Surprise 💌</button>
+
+  <div id="message">
+    <h2>🎉 Happy Birthday! 🎉</h2>
+    <p>
+      May your life be filled with happiness,
+      love and beautiful memories.
+      May all your dreams come true! ❤️
+    </p>
+    <p>Keep smiling and stay amazing! 🫶</p>
+    <div class="heart">🎂🎈🎁</div>
+  </div>
+</div>
+
+<script>
+function openWish() {
+  document.getElementById("message").style.display = "block";
+}
+</script>
+</body>
+</html>
